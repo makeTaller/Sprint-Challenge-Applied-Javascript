@@ -17,10 +17,16 @@ function Header(){
 	date.classList.add('.date');
 
 	const title = document.createElement('h1')
+	title.textContent = "Lambda Times"
 
 	const temp = document.createElement('span')
+	temp.textContent = "98°"
 	temp.classList.add('.temp');
 
+	header.appendChild.(date)
+	header.appendChild.(title)
+	header.appendChild.(temp)
 
-	console.log(header);
+	return header
+
 }
