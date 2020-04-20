@@ -11,7 +11,7 @@
 
 const axios = require('axios');
 
-let entryTopic = document.querySelector('.topics')
+// let entryTopic = document.querySelector('.topics')
 
 axios.get("https://lambda-times-backend.herokuapp.com/topics")
 	.then( (response) =>{
@@ -23,3 +23,8 @@ axios.get("https://lambda-times-backend.herokuapp.com/topics")
 	})
 	})	
 
+
+const tab = document.createElement('div');
+
+tab.classList.add('.tabs');
+tab.textContent = "topic here"
